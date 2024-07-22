@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(245, 240, 218);
+    margin: 0;
+   font-family: 'inter';
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.wrap {
+    margin: 1.5rem;
+}
+
+#beat { 
+    border-radius: 15%;
+    border: 4px;
+    max-width: 45%;
+    height: 20%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul
+
