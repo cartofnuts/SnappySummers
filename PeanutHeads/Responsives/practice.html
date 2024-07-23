@@ -32,11 +32,11 @@
                     <a href="#" class="menu-close">
                         &#10005
                     </a>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">My Dreams</a></li>
-                    <li><a href="#">Studies</a></li>
-                    <li><a href="#">Contact</a></li>
                 </li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">My Dreams</a></li>
+                <li><a href="#">Studies</a></li>
+                <li><a href="#">Contact</a></li>
              </ul>
         </nav>
     </header>
@@ -53,5 +53,21 @@
         </div>
     </div>
 </div>
+
+<script>
+
+    const menu = document.querySelector('nav ul');
+    const menuBtn = document.querySelector('.menu-open');
+    const closeBtn = document.querySelector('.menu-close');
+
+    menuBtn.addEventListener('click', () => {
+        menu.classlist.add('open')
+    })
+
+    closeBtn.addEventListener('click', () => {
+        menu.classlist.remove('open')
+    })
+
+</script>
 </body>
 </html>
