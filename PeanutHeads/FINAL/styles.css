@@ -1,0 +1,137 @@
+*, body {
+
+    padding: 0;
+    
+    margin: 0;
+    
+    box-sizing: border-box;
+    
+    }
+    
+    .navigation-header {
+    
+    background-color: rgb(73, 51, 153);
+    
+    padding: 0 15px;
+    
+    height: 60px;
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    }
+    
+    nav {
+    
+    width: 100%;
+    
+    display: flex;
+    
+    justify-content: space-between;
+    
+    align-items: center;
+    
+    
+    
+    }
+    
+    .logo-container a {
+    
+    color: ghostwhite;
+    
+    text-decoration: none;
+    
+    font-weight: 700;
+    
+    font-size: 26px;
+    
+    }
+    
+    .navigation-items {
+    
+    display: flex;
+    
+    gap: 40px;
+    
+    }
+    
+    .navigation-items a {
+    
+    color: ghostwhite;
+    
+    text-decoration: none;
+    
+    font-weight: 500;
+    
+    font-size: 16px;
+    
+    }
+    
+    .navigation-items a:hover {
+    
+    color: gold;
+    
+    }
+    
+    .hamburger {
+    
+    display: none;
+    
+    font-size: 20px;
+    
+    font-weight: 800;
+    
+    color: white;
+    
+    }
+
+    .Nathan {
+        grid-area: nh;
+    }
+
+    .Lucas {
+        grid-area: lh;
+    }
+
+    .Partner {
+
+        display: grid;
+    
+        grid-template-columns: repeat(10, 1fr);
+    
+        grid-auto-rows: minmax(100px, auto);
+    
+        grid-template-areas: 
+        "nh nh nh nh nh lh lh lh lh lh"
+        "nh nh nh nh nh lh lh lh lh lh"
+        "nh nh nh nh nh lh lh lh lh lh";
+    
+        border: 2px solid #f76707;
+    
+        border-radius: 5px;
+    
+        background-color: #fff4e6;
+    
+        max-width: 940px;
+    
+        margin: 0 auto;
+       }
+
+       h1 p a {
+        padding-left: 10px;
+       }
+    
+
+
+    @media screen and (max-width: 768px){
+        .navigation-items {
+            display: none;
+        }
+        .hamburger {
+            display: flex;
+        }
+    }
+
