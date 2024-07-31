@@ -10,7 +10,7 @@
     
     .navigation-header {
     
-    background-color: rgb(73, 51, 153);
+    background-color: #081427;
     
     padding: 0 15px;
     
@@ -89,49 +89,123 @@
     }
 
     .Nathan {
+        padding: 10px;
+        margin-top: 2.5%;
+        margin-left: 10%;
         grid-area: nh;
+        display: block;
+        width: 35%;
+        word-wrap: normal;
+        text-align: center;
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        h1, p{
+            font-family: system-ui;
+            color: #081427;
+        }
+
     }
 
     .Lucas {
+        padding: 10px;
+        margin-top: 2.5%;
+        margin-right: 10%;
         grid-area: lh;
+        display: block;
+        width: 35%;
+        top: 60px;
+        left: 55%;
+        position: absolute;
+        word-wrap: normal;
+        text-align: center;
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        h1, p{
+            font-family: system-ui;
+            color: #081427;
+        }
+
     }
 
-    .Partner {
+    button {
+        background-color: rgb(172, 227, 172);
+        border: 0;
+        width: 170px;
+        height: 50px;
+        border-radius: 30px 30px 30px 30px;
 
-        display: grid;
-    
-        grid-template-columns: repeat(10, 1fr);
-    
-        grid-auto-rows: minmax(100px, auto);
-    
-        grid-template-areas: 
-        "nh nh nh nh nh lh lh lh lh lh"
-        "nh nh nh nh nh lh lh lh lh lh"
-        "nh nh nh nh nh lh lh lh lh lh";
-    
-        border: 2px solid #f76707;
-    
-        border-radius: 5px;
-    
-        background-color: #fff4e6;
-    
-        max-width: 940px;
-    
-        margin: 0 auto;
-       }
+        
+        a {
+            font-family: system-ui;
+            color: #081427;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
 
-       h1 p a {
-        padding-left: 10px;
-       }
-    
+    .name {
+        font-weight: bold;
+    }
 
+    .aboutMe {
+        padding: 10px;
+        grid-area: nh;
+        display: block;
+        word-wrap: normal;
 
-    @media screen and (max-width: 768px){
+        h1, p {
+            text-align: center;
+            font-size: 1.9rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            font-family: system-ui;
+            color: #081427;
+            margin: 0 3%;
+        }
+
+    }
+
+    @media screen and (max-width: 425px){
         .navigation-items {
             display: none;
         }
         .hamburger {
             display: flex;
         }
+        .Lucas {
+           position: inherit;
+        }
+
+        .Nathan {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .Lucas {
+            width: 90%;
+            margin: 0 auto;
+        }
     }
 
+        .picture {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            border: none;
+          }
