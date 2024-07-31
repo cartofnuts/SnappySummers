@@ -90,9 +90,7 @@
 
     .Nathan {
         padding: 10px;
-        margin-top: 2.5%;
         margin-left: 10%;
-        grid-area: nh;
         display: block;
         width: 35%;
         word-wrap: normal;
@@ -115,12 +113,11 @@
 
     .Lucas {
         padding: 10px;
-        margin-top: 2.5%;
         margin-right: 10%;
         grid-area: lh;
         display: block;
         width: 35%;
-        top: 60px;
+        top: 245px;
         left: 55%;
         position: absolute;
         word-wrap: normal;
@@ -155,6 +152,10 @@
             text-decoration: none;
             font-weight: bold;
         }
+    }
+
+    .lucasbutton {
+        padding-top: 10px;
     }
 
     .name {
@@ -203,9 +204,25 @@
         }
     }
 
-        .picture {
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            border: none;
-          }
+    #bannerimage {
+        width: 100%;
+        background-image: url(https://images.unsplash.com/photo-1722412877848-28417b9f7b0e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        height: 180px;
+        background-position: 0px 1650px;
+        border: 1px #081427 solid;
+
+        h2 {
+            text-align: center;
+
+            padding-top: 50px;
+
+            color: ghostwhite;
+    
+            text-decoration: none;
+    
+            font-weight: 700;
+    
+            font-size: 60px;
+        }
+      }
+      
